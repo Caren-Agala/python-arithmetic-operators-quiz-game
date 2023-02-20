@@ -5,9 +5,13 @@ print("Welcome to my math quiz!")
 playing = input("Do you want to play the game? (y/n): ")
 score = 0
 
-if playing != "y":
+if playing.lower() != "y":
     quit()
 print("Sure! Let\'s play : )") 
+
+# if playing.lower() != "yes":
+#     quit()
+# print("Sure! Let\'s play : )") 
 
 time.sleep(1)
 
@@ -56,4 +60,5 @@ else:
 time.sleep(1)
 
 print("Your final score is: " + str(score))
+print("Your final score is: " + str((score/4)*100) + " %")
 print("Congratulations!")
